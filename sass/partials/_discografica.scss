@@ -84,6 +84,9 @@
                 margin: 30px;
                 p{
                     @include text_sello(2rem, 3.5rem);
+                    .shadow{
+                        @include neon;
+                    }
                 }
             }
     }
@@ -95,6 +98,9 @@
             padding: 5px;
             p{
                 @include text_sello(1.5rem, 3rem);
+                .shadow{
+                    @include neon;
+                }
             }
         }
         

@@ -37,7 +37,6 @@ html {
   text-decoration: none;
   text-decoration: underline;
   display: block;
-  filter: drop-shadow(3px 3px 12px white);
 }
 
 #navbarNavAltMarkup {
@@ -1102,6 +1101,9 @@ html {
     font-size: 2rem;
     line-height: 3.5rem;
   }
+  .fondo_article_dark .conteiner-sello1 p .shadow {
+    filter: drop-shadow(1px 1px 6px white);
+  }
 }
 @media (max-width: 577px) {
   .fondo_article_dark {
@@ -1118,6 +1120,9 @@ html {
     font-family: "Roboto Slab", serif;
     font-size: 1.5rem;
     line-height: 3rem;
+  }
+  .fondo_article_dark .conteiner-sello1 p .shadow {
+    filter: drop-shadow(1px 1px 6px white);
   }
 }
 
