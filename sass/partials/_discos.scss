@@ -1,0 +1,188 @@
+@use 'variables';
+
+@mixin fuente-color{
+    font-family: variables.$font_titles;
+    color: variables.$colorpric;
+    text-align: center;
+}
+
+// fuente para titulo
+
+
+@mixin parrafos_discos ($fuente_p, $gap_p ){
+    font-size: $fuente_p;
+    font-family: variables.$font_parrafos;
+    text-align: center;
+    line-height: $gap_p;
+    color: variables.$colorpric;
+}
+
+// fuentes para parrafos
+
+
+
+.titulo_h1 {
+    @media (min-width:991px) {
+        @include fuente-color;
+        margin: 300px 0px;
+        font-size: 10rem;
+    }
+    @media (min-width:578px) and (max-width:990px)  {
+        @include fuente-color;
+        font-size: 5rem;
+        margin: 30vh 0px;
+    }
+    @media (max-width:577px) {
+        @include fuente-color;
+        font-size: 7rem;
+        margin: 40vh 0px;
+
+    }
+}
+.albums1{
+    @media (min-width:991px) {
+        display: flex;
+        margin: 10px;
+
+        p {
+            @include parrafos_discos(1.7rem, 3rem );
+        }
+
+        .conteiner-sec1{
+            border-radius: 15px;
+            padding: 10px;
+            margin-right: 5px;
+            background: rgb(0, 0, 0,0.9);
+            
+        }
+        .conteiner-sec2{
+            border-radius: 15px;
+            padding: 10px;
+            margin-right: 5px;
+            background: rgb(0, 0, 0,0.9);
+            
+            
+        }
+    }
+
+    @media (min-width:578px) and (max-width:990px)  {
+        margin: 10px;
+            p {
+                @include parrafos_discos(1.7rem, 3rem );
+            }
+
+            .conteiner-sec1{
+                border-radius: 20px;
+                padding: 10px;
+                background: rgb(0, 0, 0,0.9);
+                    
+        }
+            .conteiner-sec2{
+                margin-top: 10px;
+                border-radius: 20px;
+                padding: 10px;
+                background: rgb(0, 0, 0,0.9);
+        }
+        }
+
+    @media (max-width:577px) {
+        margin: 10px;
+        p {
+            @include parrafos_discos(1.5rem, 3rem );
+        }
+
+        .conteiner-sec1{
+            margin: 5px 0px;
+            border-radius: 20px;
+            padding: 10px;
+            background: rgb(0, 0, 0,0.9);
+            
+        }
+        .conteiner-sec2{
+            margin: 5px 0px;
+            border-radius: 20px;
+            padding: 10px;
+            background: rgb(0, 0, 0,0.9);
+            
+            
+        }
+    }
+    
+}
+        
+
+
+
+.albums2{
+    @media (min-width:991px) {
+    display: flex;
+    margin: 10px;
+    article{
+        display: flex;
+            p {
+                @include parrafos_discos(1.7rem, 3rem  );
+            }
+
+            .conteiner-sec3{
+                border-radius: 15px;
+                padding: 10px;
+                margin-right: 5px;
+                background: rgb(0, 0, 0,0.9);
+                
+        }
+            .conteiner-sec4{
+                border-radius: 15px;
+                padding: 10px;
+                margin-right: 5px;
+                background: rgb(0, 0, 0,0.9);
+        }
+    }
+    }
+    @media (min-width:578px) and (max-width:990px)  {
+        margin: 10px;
+        article{
+            p {
+                @include parrafos_discos(1.5rem, 3rem );
+            }
+            .conteiner-sec3{
+            border-radius: 20px;
+            padding: 10px;
+            background: rgb(0, 0, 0,0.9);
+                    
+        }
+            .conteiner-sec4{
+               margin-top: 10px;
+            border-radius: 20px;
+            padding: 10px;
+            background: rgb(0, 0, 0,0.9);
+        }
+        }
+    }
+
+    @media (max-width:577px) {
+        margin: 10px;
+        article{
+                p {
+                    @include parrafos_discos(1.5rem, 3rem );
+                }
+
+                .conteiner-sec3{
+                    margin: 5px 0px;
+                border-radius: 20px;
+                padding: 10px;
+                background: rgb(0, 0, 0,0.9);
+                        
+            }
+                .conteiner-sec4{
+                    margin: 5px 0px;
+                border-radius: 20px;
+                padding: 10px;
+                background: rgb(0, 0, 0,0.9);
+            }
+        }
+    }
+    
+
+}
+
+    

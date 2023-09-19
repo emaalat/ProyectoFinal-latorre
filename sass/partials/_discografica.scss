@@ -1,0 +1,92 @@
+@use 'variables';
+
+@mixin d-center-flex{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+}
+@mixin text_sello ($Tm_f, $esp_l ){
+    color: variables.$colorpric;
+    text-align: center;
+    font-family: variables.$font_parrafos;
+    font-size: $Tm_f;
+    line-height: $esp_l;
+}
+
+.selloind {
+    @media (min-width:991px) {
+        @include d-center-flex;
+        height: 100vh;
+        img{
+            display: block;
+            filter: drop-shadow(2px 2px 12px white);
+            border-radius: 15px;
+            height: 350px;
+            width: 400px;
+        }
+    }
+    @media (min-width:578px) and (max-width:990px) {
+        @include d-center-flex;
+        margin-bottom: 90px;
+        img{
+            display: block;
+            filter: drop-shadow(1px 1px 10px white);
+            border-radius: 25px;
+            height: 350px;
+            width: 400px;
+            margin: 5px;
+        }
+
+    }
+    @media (max-width:577px) {
+        @include d-center-flex;
+        height: 100vh;
+        img{
+            display: block;
+            filter: drop-shadow(1px 1px 10px white);
+            border-radius: 25px;
+            height: 240px;
+            width: 280px;
+            margin: 2px;
+        }
+    }
+}
+
+.fondo_article_dark {
+    @media (min-width:991px) {
+        padding: 5px;
+        border-radius: 12px;
+        background: rgba(0,0,0,0.8);
+        margin: 20px 10px 10px 10px ;
+        .conteiner-sello1{
+                margin: 30px;
+                    p{
+                        @include text_sello(1.7rem, 3rem);
+                    }
+        }
+    }
+    @media (min-width:578px) and (max-width:990px) {
+        padding: 5px;
+        border-radius: 12px;
+        background: rgba(0,0,0,0.9);
+        margin: 30px 20px 10px 20px ;
+            .conteiner-sello1{
+                margin: 30px;
+                p{
+                    @include text_sello(2rem, 3.5rem);
+                }
+            }
+    }
+    @media (max-width:577px) {
+        border-radius: 15px;
+        background: rgba(0,0,0,0.9);
+        margin: 20px 5px 5px 5px ;
+        .conteiner-sello1{
+            padding: 5px;
+            p{
+                @include text_sello(1.5rem, 3rem);
+            }
+        }
+        
+    }
+}

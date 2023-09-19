@@ -1,0 +1,273 @@
+@use 'variables';
+
+@mixin titulo_hist ($size_title, $margenes){
+        color: variables.$colorpric;
+        text-align: center;
+        margin: $margenes;
+        font-size: $size_title;
+        font-family: variables.$font_titles;   
+    }
+// mixin para titulo de historia
+@mixin  parrafos_page_hist ($Tsize, $gapF){
+    text-align: center;
+    font-size: $Tsize;
+    font-family: variables.$font_parrafos;
+    line-height: $gapF;
+    color: variables.$colorpric;
+}
+// mixin para parrafos de historia
+
+@mixin img_parrafos{
+    height: 250px;
+    width: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+// mixin imagenes de parrafo
+@mixin d-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// display flex complete
+
+@mixin flex-just-alig{
+    justify-content: center;
+    align-items: center;
+}
+
+// flex centrado
+
+
+
+.titulo_h1_historia{
+    @media (min-width:991px) {
+        @include titulo_hist(10rem, 300px 0px);
+    }
+    @media (min-width:578px) and (max-width:990px) {
+        @include titulo_hist(8rem, 0px);
+    }
+    @media(max-width:577px) {
+        @include titulo_hist(7rem, 40vh 0px);
+    }
+}
+
+
+
+.conteiner-historic {
+    @media (min-width:991px) {
+                background: rgba(0,0,0,0.9);
+                border-radius: 10px;
+                .conteiner-hist1 {
+                    @include d-flex-center;
+                    .imagen_ult_quint{
+                        img {
+                            @include img_parrafos;
+                        }
+                    }
+                    .parrafos_historia{
+                        padding: 10px;
+                        .parrafo1 {
+                            @include parrafos_page_hist(1.7rem,3rem );
+                        }
+                        .parrafo2{
+                            @include parrafos_page_hist(1.7rem,3rem );
+                        }
+                    }
+                }
+        }
+        @media (min-width:578px) and (max-width:990px) {
+            background: rgba(0,0,0,0.9);
+            border-radius: 10px;
+            .conteiner-hist1 {
+                @include flex-just-alig;
+                padding: 10px;
+
+                .imagen_ult_quint{
+                    img {
+                        @include img_parrafos;
+                    }
+                }
+                .parrafos_historia{
+                    padding: 10px;
+                    .parrafo1 {
+                        @include parrafos_page_hist(1.5rem,2rem );
+                    }
+                    .parrafo2{
+                        @include parrafos_page_hist(1.5rem,2rem );
+                    }
+                }
+            }
+        }
+        @media (max-width:577px) {
+            background: rgba(0,0,0,);
+            border-radius: 15px;
+            .conteiner-hist1 {
+                @include flex-just-alig;
+                margin-top: 10px;
+                .imagen_ult_quint{
+                    img {
+                        @include img_parrafos;
+                    }
+                }
+                .parrafos_historia{
+                    padding: 10px;
+                    .parrafo1 {
+                        @include parrafos_page_hist(1.5rem, 2.2rem );
+                    }
+                    .parrafo2{
+                        @include parrafos_page_hist(1.5rem, 2.2rem );
+                    }
+                }
+            }
+        }
+    }
+/*conteiner historia 1 */
+
+
+
+
+
+
+    .contenedor_2 {
+        @media (min-width:991px) {
+                    background: rgba(0,0,0,0.9);
+                    border-radius: 10px;
+                    margin-top: 10px;
+                    padding: 10px;
+                .conteiner-hist2 {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    .imagen_mood_devil{
+                        img {
+                            @include img_parrafos;
+                        }
+                    }
+                    .parrafos_historia{
+                        padding: 10px;
+                        .parrafo_cont_2 {
+                            @include parrafos_page_hist(1.7rem,3rem  );
+                        }
+                    }
+                }
+        }
+        @media (min-width:578px) and (max-width:990px) {
+            background: rgba(0,0,0,0.9);
+                    border-radius: 10px;
+                    margin-top: 10px;
+                    padding: 10px;
+                .conteiner-hist2 {
+                    @include d-flex-center;
+                    flex-wrap: wrap;
+                    .imagen_mood_devil{
+                        img {
+                            @include img_parrafos;
+                        }
+                    }
+                    .parrafos_historia{
+                        padding: 10px;
+                        .parrafo_cont_2 {
+                            @include parrafos_page_hist(1.5rem,2rem );
+                        }
+                    }
+                }
+        }
+        @media (max-width:577px) {
+            background: rgba(0,0,0,);
+            border-radius: 10px;
+            margin-top: 10px;
+            padding: 15px;
+        .conteiner-hist2 {
+            @include d-flex-center;
+            flex-wrap: wrap;
+            .imagen_mood_devil{
+                img {
+                    @include img_parrafos;
+                }
+            }
+            .parrafos_historia{
+                padding: 10px;
+                .parrafo_cont_2 {
+                    @include parrafos_page_hist(1.5rem, 2.2rem );
+                }
+            }
+        }
+        }
+        
+}
+/*conteiner 2 */
+
+.contenedor_3{
+    @media (min-width:991px) {
+            background: rgba(0,0,0,0.9);
+            border-radius: 10px;
+            margin-top: 10px;
+            padding: 10px;
+        .conteiner-hist3{
+                @include d-flex-center;
+            .imagen_geba_ysy{
+                img {
+                    @include img_parrafos;
+                }
+            }
+            .parrafos_historia{
+                padding: 10px;
+                .parrafo1{
+                    @include parrafos_page_hist(1.7rem,3rem  );
+                }
+                .parrafo2{
+                    @include parrafos_page_hist(1.7rem,3rem  );
+                }
+            }
+        }
+    }
+    @media (min-width:578px) and (max-width:990px) {
+        background: rgba(0,0,0,0.9);
+            border-radius: 10px;
+            margin-top: 10px;
+            padding: 10px;
+        .conteiner-hist3{
+            @include d-flex-center;
+            flex-direction: column;
+            .imagen_geba_ysy{
+                img {
+                    @include img_parrafos;
+                }
+            }
+            .parrafos_historia{
+                padding: 10px;
+                .parrafo1{
+                    @include parrafos_page_hist(1.5rem, 2rem );
+                }
+                .parrafo2{
+                    @include parrafos_page_hist(1.5rem, 2rem );
+                }
+            }
+        }
+    }
+    @media (max-width:577px) {
+        background: rgba(0,0,0,);
+            border-radius: 10px;
+            margin-top: 10px;
+            padding: 15px;
+        .conteiner-hist3{
+            @include d-flex-center;
+            flex-direction: column;
+            .imagen_geba_ysy{
+                img {
+                    @include img_parrafos;
+                }
+            }
+            .parrafos_historia{
+                padding: 10px;
+                .parrafo1{
+                    @include parrafos_page_hist(1.5rem, 2.2rem );
+                }
+                .parrafo2{
+                    @include parrafos_page_hist(1.5rem, 2.2rem );
+                }
+            }
+        }
+    }
+}

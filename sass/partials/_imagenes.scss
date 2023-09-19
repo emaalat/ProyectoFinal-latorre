@@ -1,0 +1,59 @@
+@use 'variables';
+
+
+/* mixin para edit imagenes */
+@mixin img_galeria($ancho, $height, $borde){
+    width: $ancho;
+    margin: 0;
+    padding: 0;
+    height: $height;
+    border-radius: $borde;
+    object-fit: cover;
+}
+@mixin titulo_galeria ($margn, $img){
+        margin: $margn;
+        text-align: center;
+        color: white;
+        font-size: $img;
+        font-family: variables.$font_titles;
+}
+
+
+#titulo_galery {
+    @media (min-width:991px) {
+        @include titulo_galeria(300px 0px, 10rem)
+    }
+    @media (min-width:578px) and (max-width:990px) {
+        @include titulo_galeria(200px 0px, 10rem)
+    }
+    @media (max-width:577px) {
+        @include titulo_galeria(40vh 0px, 7rem)
+    }
+}
+
+.conteiner_fotos {
+    @media (min-width:991px) {
+        row-gap: 3rem;
+        .photos{
+            img{
+                @include img_galeria(330px, 300px , 5px);
+            }
+        }
+    }
+    @media (min-width:578px) and (max-width:990px) {
+        row-gap: 2rem;
+        .photos{
+            img{
+                @include img_galeria(100%, 100% , 10% );
+            }
+        }
+    }
+    @media (max-width:577px) {
+        row-gap: 1rem;
+        .photos{
+            img{
+                @include img_galeria(100%, 400px , 5%);
+            }
+    }
+}
+}

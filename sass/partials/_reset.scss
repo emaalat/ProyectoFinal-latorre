@@ -1,0 +1,254 @@
+@use 'variables';
+
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: 62.5%;
+}
+.video_ysya {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: -2;
+	top: 0;
+	left: 0;
+	min-height: 100vh;
+}
+.capa-mov {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.7;
+}
+.navbar-nav {
+	a {
+		font-family: variables.$font_parrafos;
+		&:hover {
+			text-decoration: none;
+			text-decoration: underline;
+			display: block;
+			filter: drop-shadow(3px 3px 12px white);
+		}
+	}
+}
+#navbarNavAltMarkup {
+	justify-content: center;
+}
+.navbar-toggler {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	transition: .5 ease-in-out;
+	outline: none;
+	box-shadow: none;
+	border: 0;
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		border: 0;
+	}
+	&:active {
+		outline: none;
+		box-shadow: none;
+		border: 0;
+	}
+	span {
+		margin: 0;
+		padding: 0;
+	}
+	.top-bar {
+		margin-top: 0px;
+		transform: rotate(135deg);
+	}
+	.middle-bar {
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+	.bottom-bar {
+		margin-top: 0px;
+		transform: rotate(-135deg);
+	}
+}
+.navbar-toggler-icon {
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		border: 0;
+	}
+}
+.toggler-icon {
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 1px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: .20s ease-in-out;
+}
+.middle-bar {
+	margin-top: 0px;
+}
+.navbar-toggler.collapsed {
+	.top-bar {
+		margin-top: -10px;
+		transform: rotate(0deg);
+	}
+	.middle-bar {
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+	.bottom-bar {
+		margin-top: 10px;
+		transform: rotate(0deg);
+	}
+}
+.color_navs_a {
+	display: block;
+	color: white;
+}
+.logo_ysysa {
+	margin: 10px;
+	height: 60px;
+	width: 70px;
+}
+
+.navbar-nav {
+	@media (min-width:991px) {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		margin: 15px;
+		a{
+			font-size: 1.3rem;
+        	text-decoration: none;
+        	padding: 10px;
+		}
+	}
+	@media (min-width: 578px) and (max-width: 990px) {
+		background: rgba(0,0,0,1);
+		align-items: center;
+		justify-content: space-around;
+		min-height: 60vh;
+		border-radius: 20px;
+		margin: 15px;
+		a{
+			font-size: 2rem;
+			text-decoration: none;
+			padding: 10px;
+			border-radius: 100%;
+		}
+	}
+	@media (max-width:577px){
+		background: rgba(0,0,0,1);
+        align-items: center;
+        justify-content: space-around;
+        min-height: 80vh;
+        border-radius: 15px;
+        margin: 15px;
+		a{
+			font-size: 2rem;
+            text-decoration: none;
+		}
+	}
+}
+
+
+#footerin {
+	@media (min-width:991px) {
+		margin: 50px 0px;
+		.fo1{
+			width: 30%;
+			font-size: 1rem;
+			color: white;
+		}
+		.fo2{
+			display: flex;
+			.logos_foot{
+				display: flex;
+				width: 100%;
+				height: 100%;
+				align-items: center;
+				justify-content: space-between;
+				a{
+					height: auto;
+        			width: auto;
+					.logo{
+						width: 16px;
+						height: 16px;
+					}
+				}
+			}	
+		}
+
+	}
+    @media (min-width:578px) and (max-width:990px) {
+        margin: 40px 0px;
+		.fo1{
+			padding: 0;
+			font-size: 1rem;
+			color: white;
+		}
+		.fo2{
+			padding: 0;
+			.logos_foot{
+				display: flex;
+				width: 100%;
+				height: 100%;
+				justify-content: space-evenly;
+				align-items: center;
+				a{
+					display: inline-block;
+		    		width: auto;
+					.logo{
+						width: 17px;
+            			height: 17px;
+					}
+				}
+			}
+		}
+    }
+	@media (max-width:577px) {
+		margin: 30px 0px;
+		.fo1{
+			text-align: center;
+			color: white;
+			font-size: 1rem;
+		}
+		.fo2{
+			padding: 0;
+			margin: 10px 0px;
+			.logos_foot{
+				display: flex;
+				width: 100%;
+				height: 100%;
+				justify-content: space-evenly;
+				align-items: center;
+				a{
+					display: inline-block;
+		    		width: auto;
+					.logo{
+						width: 17px;
+            			height: 17px;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+    
+
+

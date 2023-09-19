@@ -1,0 +1,113 @@
+@use 'variables';
+
+@mixin title_index{ 
+        color: white;
+        display: block;
+        text-align: center;
+        font-style: inherit;
+        font-family: variables.$font_titles;
+}
+// MIXIN TITULO INDEX
+@mixin segundo_title_index ($size2, $separacion ){
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: $size2;
+    margin: $separacion;
+    font-style: inherit;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Viga', sans-serif;   
+}
+// MIXIN SEGUNDO--TITULO INDEX
+
+@mixin parrafos_index ($sizeF, $gapF){
+    text-align: center;
+    font-size: $sizeF;
+    line-height: $gapF;
+    font-family: variables.$font_parrafos;
+}
+
+#artist { 
+    @media (min-width:991px) {
+        @include title_index;
+        font-size: 10rem;
+        margin: 100px 0px;
+        filter: drop-shadow(5px 5px 12px white);
+    }
+        @media (min-width:578px) and (max-width:990px) {
+            @include title_index;
+            font-size: 8rem;
+            margin: 10% 0px;
+            filter: drop-shadow(5px 5px 12px white);
+        }
+        @media (max-width:577px) {
+                @include title_index;
+                font-size: 10rem;
+                margin: 40vh 0px;
+                filter: drop-shadow(2px 2px 12px white);
+        }
+}
+
+.contenedorpric {
+@media (min-width:991px) {
+        text-align: center;
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+        background: rgb(0, 0, 0,0.9);
+        min-height: 100%;
+            p{
+                @include parrafos_index(1.9rem , 3.4rem );
+            }
+    }
+@media (min-width:578px) and (max-width:990px) {
+        text-align: center;
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+        background: rgb(0, 0, 0,0.8);
+        min-height: 100%;
+            p{
+                @include parrafos_index(2rem , 3rem );
+            }
+    }
+@media (max-width:577px) {
+        text-align: center;
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+        background: rgb(0, 0, 0,0.9);
+        min-height: 100%;
+            p{
+                @include parrafos_index(1.5rem, 2.2rem );
+            }
+    }
+}
+
+#second_title {
+@media (min-width:991px) {
+    @include segundo_title_index(3rem, 10% 0px 20px 0px);
+}
+@media (min-width:578px) and (max-width:990px) {
+    @include segundo_title_index(2.5rem, 10vh 0px);
+}
+}
+
+.videosubidon {
+@media (min-width: 991px) {
+    display: block; 
+    .inframe_video{
+        margin: 15px 0px;
+    }
+}
+@media (min-width:578px) and (max-width:990px) {
+    display: block;
+    .inframe_video{
+        margin: 15px 0px;
+    }
+}
+@media (max-width:577px) {
+    display: none;
+}
+}
+
