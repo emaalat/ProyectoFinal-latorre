@@ -13,6 +13,13 @@
     line-height: $esp_l;
 }
 
+@mixin neon{
+    filter: drop-shadow(1px 1px 6px white);
+}
+
+// neon de palabras
+
+
 .selloind {
     @media (min-width:991px) {
         @include d-center-flex;
@@ -61,7 +68,10 @@
         .conteiner-sello1{
                 margin: 30px;
                     p{
-                        @include text_sello(1.7rem, 3rem);
+                        @include text_sello(1.9rem , 3.2rem);
+                        .shadow{
+                            @include neon;
+                        }
                     }
         }
     }

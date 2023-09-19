@@ -307,7 +307,7 @@ html {
   .contenedorpric p {
     text-align: center;
     font-size: 1.9rem;
-    line-height: 3.4rem;
+    line-height: 3.2rem;
     font-family: "Roboto Slab", serif;
   }
 }
@@ -509,17 +509,23 @@ html {
   }
   .conteiner-historic .conteiner-hist1 .parrafos_historia .parrafo1 {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-family: "Roboto Slab", serif;
     line-height: 3rem;
     color: white;
   }
+  .conteiner-historic .conteiner-hist1 .parrafos_historia .parrafo1 .shadow {
+    filter: drop-shadow(1px 1px 6px white);
+  }
   .conteiner-historic .conteiner-hist1 .parrafos_historia .parrafo2 {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-family: "Roboto Slab", serif;
     line-height: 3rem;
     color: white;
+  }
+  .conteiner-historic .conteiner-hist1 .parrafos_historia .parrafo2 .shadow {
+    filter: drop-shadow(1px 1px 6px white);
   }
 }
 @media (min-width: 578px) and (max-width: 990px) {
@@ -548,12 +554,18 @@ html {
     line-height: 2rem;
     color: white;
   }
+  .conteiner-historic .conteiner-hist1 .parrafos_historia .parrafo1 .shadow {
+    filter: drop-shadow(1px 1px 6px white);
+  }
   .conteiner-historic .conteiner-hist1 .parrafos_historia .parrafo2 {
     text-align: center;
     font-size: 1.5rem;
     font-family: "Roboto Slab", serif;
     line-height: 2rem;
     color: white;
+  }
+  .conteiner-historic .conteiner-hist1 .parrafos_historia .parrafo2 .shadow {
+    filter: drop-shadow(1px 1px 6px white);
   }
 }
 @media (max-width: 577px) {
@@ -582,12 +594,18 @@ html {
     line-height: 2.2rem;
     color: white;
   }
+  .conteiner-historic .conteiner-hist1 .parrafos_historia .parrafo1 .shadow {
+    filter: drop-shadow(1px 1px 6px white);
+  }
   .conteiner-historic .conteiner-hist1 .parrafos_historia .parrafo2 {
     text-align: center;
     font-size: 1.5rem;
     font-family: "Roboto Slab", serif;
     line-height: 2.2rem;
     color: white;
+  }
+  .conteiner-historic .conteiner-hist1 .parrafos_historia .parrafo2 .shadow {
+    filter: drop-shadow(1px 1px 6px white);
   }
 }
 
@@ -615,10 +633,13 @@ html {
   }
   .contenedor_2 .conteiner-hist2 .parrafos_historia .parrafo_cont_2 {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-family: "Roboto Slab", serif;
-    line-height: 3rem;
+    line-height: 3.2rem;
     color: white;
+  }
+  .contenedor_2 .conteiner-hist2 .parrafos_historia .parrafo_cont_2 .shadow {
+    filter: drop-shadow(1px 1px 6px white);
   }
 }
 @media (min-width: 578px) and (max-width: 990px) {
@@ -650,6 +671,9 @@ html {
     line-height: 2rem;
     color: white;
   }
+  .contenedor_2 .conteiner-hist2 .parrafos_historia .parrafo_cont_2 .shadow {
+    filter: drop-shadow(1px 1px 6px white);
+  }
 }
 @media (max-width: 577px) {
   .contenedor_2 {
@@ -679,6 +703,9 @@ html {
     font-family: "Roboto Slab", serif;
     line-height: 2.2rem;
     color: white;
+  }
+  .contenedor_2 .conteiner-hist2 .parrafos_historia .parrafo_cont_2 .shadow {
+    filter: drop-shadow(1px 1px 6px white);
   }
 }
 
@@ -706,17 +733,23 @@ html {
   }
   .contenedor_3 .conteiner-hist3 .parrafos_historia .parrafo1 {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-family: "Roboto Slab", serif;
-    line-height: 3rem;
+    line-height: 3.2rem;
     color: white;
+  }
+  .contenedor_3 .conteiner-hist3 .parrafos_historia .parrafo1 .shadow {
+    filter: drop-shadow(1px 1px 6px white);
   }
   .contenedor_3 .conteiner-hist3 .parrafos_historia .parrafo2 {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-family: "Roboto Slab", serif;
-    line-height: 3rem;
+    line-height: 3.2rem;
     color: white;
+  }
+  .contenedor_3 .conteiner-hist3 .parrafos_historia .parrafo2 .shadow {
+    filter: drop-shadow(1px 1px 6px white);
   }
 }
 @media (min-width: 578px) and (max-width: 990px) {
@@ -748,12 +781,18 @@ html {
     line-height: 2rem;
     color: white;
   }
+  .contenedor_3 .conteiner-hist3 .parrafos_historia .parrafo1 .shadow {
+    filter: drop-shadow(1px 1px 6px white);
+  }
   .contenedor_3 .conteiner-hist3 .parrafos_historia .parrafo2 {
     text-align: center;
     font-size: 1.5rem;
     font-family: "Roboto Slab", serif;
     line-height: 2rem;
     color: white;
+  }
+  .contenedor_3 .conteiner-hist3 .parrafos_historia .parrafo2 .shadow {
+    filter: drop-shadow(1px 1px 6px white);
   }
 }
 @media (max-width: 577px) {
@@ -785,12 +824,18 @@ html {
     line-height: 2.2rem;
     color: white;
   }
+  .contenedor_3 .conteiner-hist3 .parrafos_historia .parrafo1 .shadow {
+    filter: drop-shadow(1px 1px 6px white);
+  }
   .contenedor_3 .conteiner-hist3 .parrafos_historia .parrafo2 {
     text-align: center;
     font-size: 1.5rem;
     font-family: "Roboto Slab", serif;
     line-height: 2.2rem;
     color: white;
+  }
+  .contenedor_3 .conteiner-hist3 .parrafos_historia .parrafo2 .shadow {
+    filter: drop-shadow(1px 1px 6px white);
   }
 }
 
@@ -1033,8 +1078,11 @@ html {
     color: white;
     text-align: center;
     font-family: "Roboto Slab", serif;
-    font-size: 1.7rem;
-    line-height: 3rem;
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+  }
+  .fondo_article_dark .conteiner-sello1 p .shadow {
+    filter: drop-shadow(1px 1px 6px white);
   }
 }
 @media (min-width: 578px) and (max-width: 990px) {
